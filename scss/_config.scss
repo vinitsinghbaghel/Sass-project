@@ -1,4 +1,15 @@
 $font-used: arial, sans-serif;
-$color: #d9e0f3;
-$primary-color: #0e6cff;
+$bg-color: #d9e0f3;
+// $primary-color: #0e6cff;
+$primary-color: #e0ffff;
 $secondary-color: #ff8700;
+
+// Text color based on bg
+
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}

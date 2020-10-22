@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: $color;
+  background-color: $bg-color;
   font-family: $font-used;
   line-height: 1.4;
 }
@@ -22,7 +22,7 @@ a {
 
 .showcase {
   background-color: $primary-color;
-  color: #ffffff;
+  color: set-text-color($primary-color);
   height: 600px;
 
   nav {
@@ -37,12 +37,16 @@ a {
     li {
       padding: 15px;
     }
+    a {
+      color: set-text-color($primary-color);
+    }
+
     a:hover {
       color: $secondary-color;
     }
   }
   a {
-    color: #fff;
+    color: set-text-color($primary-color);
   }
 
   &-content {

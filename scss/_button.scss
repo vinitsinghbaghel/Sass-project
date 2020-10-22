@@ -11,7 +11,7 @@
 
 .btn-primary {
   @extend %btn;
-  background-color: $primary-color;
+  background-color: lighten($color: $primary-color, $amount: 10%);
 }
 
 .btn-secondary {
