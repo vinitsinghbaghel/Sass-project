@@ -1,6 +1,7 @@
 @import "config";
 @import "utilities";
 @import "button";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -56,7 +57,7 @@ a {
     justify-content: center;
 
     img {
-      height: 50%;
+      width: 50%;
     }
 
     h1 {
